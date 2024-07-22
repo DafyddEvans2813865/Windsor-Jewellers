@@ -1,5 +1,103 @@
 {% extends 'base.html' %}
+{% load static %}
+
 
 {% block content %}
-    <h1>HI</h1>
+<div class="navbar-container mt-2">
+
+      <img src="{% static 'images/logo.jpg' %}" alt="Windsor Logo" class="img-fluid navbar-logo"></img>
+      <img src="{% static 'images/logoname.jpg' %}" class="img-fluid navbar-title mt-2 "></img>
+
+      <ul class="nav nav-underline justify-content-end mt-2 ms-auto " >
+
+            <li class="nav-item nav">
+              <a class="nav-link  nav-link-custom" href="#">About</a>
+            </li>
+            <li class="nav-item nav">
+                <a class="nav-link  nav-link-custom" aria-disabled="true">Nomination</a>
+              </li>
+            <li class="nav-item nav">
+              <a class="nav-link  nav-link-custom" href="#">Repairs</a>
+            </li>
+            <li class="nav-item nav nav-item:last-child">
+              <a class="nav-link  nav-link-custom" aria-disabled="true">Contact</a>
+            </li>
+      </ul>
+    </br>
+
+</div>
+
+<body>
+  <div class="video-background-container">
+      <video autoplay muted loop class="video-background">
+          <source src="{% static 'images/tempvideo.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+
+      <div class="video-content">
+          <h1>WINDSOR JEWELLERS</h1>
+          <div class="thick-line"></div>
+          <h3>Family-Run Excellence Since 1993</h3>
+          <P>With over 30 years of experience in the jewellery industry, 
+            Windsor Jewellers is a family-run business taking pride in providing exceptional jewellery for any occasion. 
+            Our team is passionate about helping each and every one of our customers find the perfect style to match them.</P>
+      </div>
+  </div>
+
+  <div class="container mt-4">
+    
+      <h1>Popular Brands</h1>
+      <div class="thick-line"></div>
+      <p>At Windsor Jewellers, we stock nothing but the finest brands. Check out some of our partners below.</p>
+
+      
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner carousel-box">
+          <div class="carousel-item active" data-bs-interval="10000">
+            
+            <h3>Nomination italy</h3>
+            <p>This is the content for the second box.</p>
+            
+            
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            
+            <h3>Watches 2</h3>
+            <p>This is the content for the second box.</p>
+            
+            
+          </div>
+          <div class="carousel-item">
+            
+            <h3>clock</h3>
+            <p>This is the content for the second box.</p>
+            
+           
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+   
+
+</body>
+
+
+
+  
+
+
+</br></br></br></br>
+
 {% endblock %}
