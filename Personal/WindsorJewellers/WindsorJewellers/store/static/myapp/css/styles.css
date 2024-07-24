@@ -52,6 +52,7 @@ html, body {
     position: relative;
     width: 100%;
     height: 100vh; /* Full viewport height */
+    max-height: 800px;
     overflow: hidden; /* Hide overflow to ensure no scrollbars */
 }
 
@@ -68,14 +69,14 @@ html, body {
 
 .video-content {
     position: absolute; /* Position content absolutely within the container */
-    bottom: 8rem; /* Space from the bottom */
+    bottom: 6rem; /* Space from the bottom */
     left: 5rem; /* Space from the right */
     z-index: 1; /* Ensure content is above the video */
     color: #000000; /* Text color for readability */
     text-align: left; /* Align text to the right */
     padding: 1.8rem; /* Adds padding around the content */
     background: rgba(255, 255, 255, 0.774); /* Optional: Adds a semi-transparent background */
-    max-width: 500px; /* Optional: Restrict the width of the content box */
+    max-width: 700px; /* Optional: Restrict the width of the content box */
 }
 
 .thick-line {
@@ -83,13 +84,23 @@ html, body {
     margin: 20px 0; /* Optional: Adds space above and below the line */
 }
 
-.carousel-box {
-    background-color: #fff; /* Background color for the boxes */
-    border: 2px solid #000; /* Border color for the boxes */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
-    padding: 20px; /* Padding inside the boxes */
-    text-align: center; /* Center text inside the boxes */
-    max-width: 100%; /* Ensures the box doesn’t overflow its container */
-    margin: auto; /* Centers the box horizontally within the carousel item */
+.thin-line {
+    border-top: 2px solid black; /* Adjust thickness and color here */
+    margin: 10px 0; /* Optional: Adds space above and below the line */
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+}
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove the default border */
 }

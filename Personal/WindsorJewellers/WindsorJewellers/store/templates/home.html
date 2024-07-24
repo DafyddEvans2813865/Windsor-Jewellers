@@ -3,6 +3,7 @@
 
 
 {% block content %}
+<!-- Nav bar-->
 <div class="navbar-container mt-2">
 
       <img src="{% static 'images/logo.jpg' %}" alt="Windsor Logo" class="img-fluid navbar-logo"></img>
@@ -24,10 +25,12 @@
             </li>
       </ul>
     </br>
-
 </div>
 
+
+
 <body>
+  <!-- Header Video -->
   <div class="video-background-container">
       <video autoplay muted loop class="video-background">
           <source src="{% static 'images/tempvideo.mp4' %}" type="video/mp4">
@@ -41,63 +44,140 @@
           <P>With over 30 years of experience in the jewellery industry, 
             Windsor Jewellers is a family-run business taking pride in providing exceptional jewellery for any occasion. 
             Our team is passionate about helping each and every one of our customers find the perfect style to match them.</P>
+          
       </div>
   </div>
+  </br></br>
 
-  <div class="container mt-4">
-    
+  <!-- Popular Brands -->
+  <div class="container-fluid">
+    <div class="container col-8">
       <h1>Popular Brands</h1>
       <div class="thick-line"></div>
       <p>At Windsor Jewellers, we stock nothing but the finest brands. Check out some of our partners below.</p>
+    </div>
+  </div>
 
-      
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner carousel-box">
-          <div class="carousel-item active" data-bs-interval="10000">
-            
-            <h3>Nomination italy</h3>
-            <p>This is the content for the second box.</p>
-            
-            
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            
-            <h3>Watches 2</h3>
-            <p>This is the content for the second box.</p>
-            
-            
-          </div>
-          <div class="carousel-item">
-            
-            <h3>clock</h3>
-            <p>This is the content for the second box.</p>
-            
-           
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+
+</br></br> </br></br>
+
+<!-- Repairs -->
+<div class="container text-left">
+    <div class="row ">
+      <div class="col-2"></div>
+
+      <div class="col-6">
+        <h1>Service and Repairs</h1>
+        <div class="thin-line"></div>
+          <p>Our family-run business excels in expert servicing and repair. Our team is dedicated to delivering exceptional care to every piece, ensuring your treasured items receive the meticulous attention they deserve. Whether you need a simple repair or a comprehensive restoration, we’re here to help.</p>
+          </br>
+          <p>For service requests, please email us at <strong>windsorjewellers@btconnect.com</strong> or visit our shop directly. We’re passionate about preserving the beauty of your jewellery for years to come.</p>
+
       </div>
-   
+      <div class="col-4">
+        <img src="{% static 'images/repair.jpg' %}" alt="Windsor Logo" class="img-fluid"></img>
+      </div>
+    </div>
+</div>
+
+</br></br> </br></br>
+
+<!-- Find us -->
+<div class="container text-left">
+  <div class="row ">
+    <div class="col-4 mt-4 ms-4" style=" text-align: center">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4944.168407086151!2d-3.446148!3d51.713202!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e3eb5932e566b%3A0xeaad97637758438!2sWindsor%20Jewellers!5e0!3m2!1sen!2sus!4v1721819640498!5m2!1sen!2sus" 
+        style="border:1; width: 90%; height: 85%;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade" 
+        class="img-fluid">
+      </iframe>
+    </div>
+
+    <div class="col-5" >
+      <h1>Find Our Store</h1>
+      <div class="thin-line"></div>
+      <p> our store is located in the heart of Aberdare blablb aberdare isn't actually shit i promise</p>
+
+      <div class="row ">
+
+        <div class="col-7" style="text-align: center;">
+          <h4>Open hours:<br></h4>
+          <!-- come back and fix -->
+          <table>
+            <tr>
+              
+                <td>&nbsp;Monday - Wednesday &nbsp;&nbsp;&nbsp;</td>
+                <td>09:00 - 17:00</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>09:00 - 16:00</td>
+            </tr>
+            <tr>
+                <td>Friday - Saturday</td>
+                <td>09:00 - 17:00</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+            </tr>
+          </table>
+        </div>
+  
+        <div class="col" style="text-align: center;">
+          <h4>Find us at:<br></h4>
+          <p>
+          Windsor Jewellers,<br>
+          29 Canon St,<br>
+          Aberdare,<br>
+          CF44 7AP,<br>
+          United Kingdom
+          </p>
+        </div>
+
+      </div>
+      
+      
+
+    </div>
+
+    <div class="col-2">
+      
+    </div>
+  </div>
+</div>
+
+
+
+</br></br>
+
+<!-- Bottum -->
+<div class="container-fluid">
+  <div style="border-top: 1px solid black;"></div>
+  <div class="container text-left">
+    <div class="row ">
+      <img src="{% static 'images/logo.jpg' %}" alt="Windsor Logo" class="img-fluid navbar-logo"></img>
+      <img src="{% static 'images/logoname.jpg' %}" class="img-fluid navbar-title mt-2 "></img>
+    </div>
+
+    <div class="row">
+     
+        blalallalalalalalal legal stuff might have to go here im honestly not to sure
+      
+    </div>
+  </div>
+
+</div>
+  
+
+</br></br> </br></br>
 
 </body>
 
 
 
-  
-
-
-</br></br></br></br>
 
 {% endblock %}
