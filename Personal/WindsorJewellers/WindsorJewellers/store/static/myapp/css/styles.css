@@ -88,19 +88,3 @@ html, body {
     border-top: 2px solid black; /* Adjust thickness and color here */
     margin: 10px 0; /* Optional: Adds space above and below the line */
 }
-
-.iframe-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    overflow: hidden;
-}
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0; /* Remove the default border */
-}
