@@ -4,7 +4,7 @@
 
 {% block content %}
 <!-- Nav bar-->
-<div class="navbar-container mt-2">
+<div class="navbar-container container-fluid" style="position: fixed; z-index: 5;">
 
       <img src="{% static 'images/logo.jpg' %}" alt="Windsor Logo" class="img-fluid navbar-logo"></img>
       <img src="{% static 'images/logoname.jpg' %}" class="img-fluid navbar-title mt-2 "></img>
@@ -159,7 +159,7 @@
       <div class="row ">
 
         <div class="col-7" style="text-align: center;">
-          <h4>Open hours:<br></h4>
+          <h5>Open hours:<br></h5>
           <!-- come back and fix -->
           <table>
             <tr>
@@ -183,7 +183,7 @@
         </div>
   
         <div class="col" style="text-align: center;">
-          <h4>Find us at:<br></h4>
+          <h5>Find us at:<br></h5>
           <p>
           Windsor Jewellers,<br>
           29 Canon St,<br>
@@ -212,7 +212,7 @@
 <!-- Bottum -->
 <div class="container-fluid">
   <div style="border-top: 1px solid black;"></div>
-  <div class="container text-left">
+  <div class="container text-left mt-4">
     <div class="row ">
       <div class="col">
         <img src="{% static 'images/logo.jpg' %}" alt="Windsor Logo" class="img-fluid navbar-logo"></img>
